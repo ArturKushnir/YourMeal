@@ -1,0 +1,797 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./img/page-img/pic.png" type="image/png">
+    <title>YourMeal</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <!-- шрифти -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200..1000&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header" id="header">
+        <div class="container">
+            <div class="header__nav-wrap">
+                <a href="./index.html"><img src="./img/page-img/logo-header.svg" alt="YourMeal" class="logo"></a>
+    
+                <ul class="nav-btn">
+                    <li class="nav-btn__item"><a href="#!" class="btn-login">Login</a></li>
+                    <li class="nav-btn__item"><a href="#!" class="btn-sign">Sign up</a></li>
+                </ul>
+            </div> 
+        </div>
+
+        <div class="header__wrap">
+                <img src="./img/page-img/pic.png" alt="pic">
+                <div class="header-text-block">
+                    <h1 class="header-title">Швидкий шлях <span class="accent">до смачного!</span></h1>
+                    <p class="header-p">Безкоштовна доставка від 500 грн</p>
+                </div>  
+        </div>
+    </header>
+
+    <nav class="nav" id="nav">
+        <div class="container">
+            <div class="nav-row">
+
+                <ul class="nav-list">
+                    <li class="nav-list__item">
+                        <a href="#burgers" class="nav-list__link"> <img src="./img/nav-logo/icon-cheeseburger.svg" alt="бургери"> бургери</a>
+                    </li>
+
+                    <li class="nav-list__item">
+                        <a href="#snacks" class="nav-list__link"> <img src="./img/nav-logo/icon-onion.svg" alt="Закуски"> Закуски</a>
+                    </li>
+
+                    <li class="nav-list__item">
+                        <a href="#hot-dogs" class="nav-list__link"> <img src="./img/nav-logo/icon-hotdog.svg" alt="Хот-доги"> Хот-доги</a>
+                    </li>
+
+                    <li class="nav-list__item">
+                        <a href="#kebabs" class="nav-list__link"> <img src="./img/nav-logo/icon-shaurma.svg" alt="Кебаби"> Кебаби</a>
+                    </li>
+
+                    <li class="nav-list__item">
+                        <a href="#wok" class="nav-list__link"> <img src="./img/nav-logo/icon-wok.svg" alt="Wok"> Wok</a>
+                    </li>
+
+                    <li class="nav-list__item">
+                        <a href="#desserts" class="nav-list__link"> <img src="./img/nav-logo/icon-sweet.svg" alt="Десерти"> Десерти</a>
+                    </li>
+
+                    <li class="nav-list__item">
+                        <a href="#sauces" class="nav-list__link"> <img src="./img/nav-logo/icon-catchup.svg" alt="Соуси"> Соуси</a>
+                    </li>
+
+                    <div>
+                        <li class="nav-list__basket">
+                            <a href="./basket.html" class="cart"><img src="./img/nav-logo/shopping-cart.png" alt="shopping cart" class="nav-list__logo"></a>
+                        </li>
+                    </div>
+                </ul>
+                
+            </div>
+
+        </div>
+    </nav>
+
+    <main class="menu-burgers">
+        <div class="container">
+            <a name="burgers"><h2 class="h2-food">Бургери</h2></a>
+
+            <ul class="cards">
+                <li class="card">
+                    <div class="card__content">
+                        <div class="card__content-wrap">
+                            <img src="./img/burgers/bomb-burger.png" alt="Мясна бомба" class="card__img">
+                            
+                            <div class="card__title-wrap">
+                                <div class="card__price">
+                                    <p class="price-number">239</p>
+                                    <p>грн</p>
+                                </div>
+
+                                <p class="card__name">Мясна бомба</p>
+                            </div>
+                            
+                            <p class="card__waight">520г</p>
+                        </div>
+                        
+                        <div class="card__btn-wrap">
+                            <button class="card__btn">Додати</button>
+                        </div>
+                    </div>
+                </li>
+
+                <li class="card">
+                    <div class="card__content">
+                        <div class="card__content-wrap">
+                            <img src="./img/burgers/cheese-burger.png" alt="Супер сирний бургер" class="card__img">
+                            
+                            <div class="card__title-wrap">
+                                <div class="card__price">
+                                    <p class="price-number">239</p>
+                                    <p>грн</p>
+                                </div>
+                                <h5 class="card__name">Супер сирний</h5>
+                            </div>
+                            
+                            <p class="card__waight">512г</p>
+                        </div>
+                        
+                        <div class="card__btn-wrap">
+                            <button class="card__btn">Додати</button>
+                        </div>
+                    </div>
+                </li>
+
+                <li class="card">
+                    <div class="card__content">
+                        <div class="card__content-wrap">
+                            <img src="./img/burgers/big-burger.png" alt="Ситний бургер" class="card__img">
+                            
+                            <div class="card__title-wrap">
+                                <div class="card__price">
+                                    <p class="price-number">269</p>
+                                    <p>грн</p>
+                                </div>
+                                <h5 class="card__name">ситний</h5>
+                            </div>
+                            
+                            <p class="card__waight">580г</p>
+                        </div>
+                        
+                        <div class="card__btn-wrap">
+                            <button class="card__btn">Додати</button>
+                        </div>
+                    </div>
+                </li>
+
+                <li class="card">
+                    <div class="card__content">
+                        <div class="card__content-wrap">
+                            <img src="./img/burgers/hit-burger.png" alt="Важкий удар" class="card__img">
+                            
+                            <div class="card__title-wrap">
+                                <div class="card__price">
+                                    <p class="price-number">259</p>
+                                    <p>грн</p>
+                                </div>
+                                <h5 class="card__name">Важкий удар</h5>
+                            </div>
+                            
+                            <p class="card__waight">570г</p>
+                        </div>
+                        
+                        <div class="card__btn-wrap">
+                            <button class="card__btn">Додати</button>
+                        </div>
+                    </div>
+                </li>
+
+                <li class="card">
+                    <div class="card__content">
+                        <div class="card__content-wrap">
+                            <img src="./img/burgers/classic-burger.png" alt="Класичний бургер" class="card__img">
+                            
+                            <div class="card__title-wrap">
+                                <div class="card__price">
+                                    <p class="price-number">199</p>
+                                    <p>грн</p>
+                                </div>
+                                <h5 class="card__name">Класичний бургер</h5>
+                            </div>
+                            
+                            <p class="card__waight">450г</p>
+                        </div>
+                        
+                        <div class="card__btn-wrap">
+                            <button class="card__btn">Додати</button>
+                        </div>
+                    </div>
+                </li>
+
+                <li class="card">
+                    <div class="card__content">
+                        <div class="card__content-wrap">
+                            <img src="./img/burgers/italian-burger.png" alt="Італійський" class="card__img">
+                            
+                            <div class="card__title-wrap">
+                                <div class="card__price">
+                                    <p class="price-number">229</p>
+                                    <p>грн</p>
+                                </div>
+                                <h5 class="card__name">Італійський</h5>
+                            </div>
+                            
+                            <p class="card__waight">510г</p>
+                        </div>
+                        
+                        <div class="card__btn-wrap">
+                            <button class="card__btn">Додати</button>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+
+        </div>
+    </main>
+
+    <main class="menu-snacks">
+        <div class="container">
+            <a name="snacks"><h2 class="h2-food">Закуски</h2></a>
+
+            <ul class="cards">
+                <li class="card">
+                    <div class="card__content">
+                        <div class="card__content-wrap">
+                            <img src="./img/snacks/fleece.png" alt="Начос" class="card__img">
+                            
+                            <div class="card__title-wrap">
+                                <div class="card__price">
+                                    <p class="price-number">129</p>
+                                    <p>грн</p>
+                                </div>
+                                <h5 class="card__name">Начос</h5>
+                            </div>
+                            
+                            <p class="card__waight">220г</p>
+                        </div>
+                        
+                        <div class="card__btn-wrap">
+                            <button class="card__btn">Додати</button>
+                        </div>
+                    </div>
+                </li>
+            
+                <li class="card">
+                    <div class="card__content">
+                        <div class="card__content-wrap">
+                            <img src="./img/snacks/french-fries.png" alt="Картопля фрі" class="card__img">
+                            
+                            <div class="card__title-wrap">
+                                <div class="card__price">
+                                    <p class="price-number">89</p>
+                                    <p>грн</p>
+                                </div>
+                                <h5 class="card__name">Картопля фрі</h5>
+                            </div>
+                            
+                            <p class="card__waight">180г</p>
+                        </div>
+                        
+                        <div class="card__btn-wrap">
+                            <button class="card__btn">Додати</button>
+                        </div>
+                    </div>
+                </li>
+            
+                <li class="card">
+                    <div class="card__content">
+                        <div class="card__content-wrap">
+                            <img src="./img/snacks/onion-rings.png" alt="Цибулеві кільця" class="card__img">
+                            
+                            <div class="card__title-wrap">
+                                <div class="card__price">
+                                    <p class="price-number">79</p>
+                                    <p>грн</p>
+                                </div>
+                                <h5 class="card__name">Цибулеві Кільця</h5>
+                            </div>
+                            
+                            <p class="card__waight">160г</p>
+                        </div>
+                        
+                        <div class="card__btn-wrap">
+                            <button class="card__btn">Додати</button>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+
+        </div>
+    </main>
+
+    <main class="menu-hot-dogs">
+        <div class="container">
+            <a name="hot-dogs"><h2 class="h2-food">Хот-доги</h2></a>
+
+            <ul class="cards">
+                <li class="card">
+                    <div class="card__content">
+                        <div class="card__content-wrap">
+                            <img src="./img/hot-dogs/homely.png" alt="домашній хот-дог" class="card__img">
+                            
+                            <div class="card__title-wrap">
+                                <div class="card__price">
+                                    <p class="price-number">119</p>
+                                    <p>грн</p>
+                                </div>
+                                <h5 class="card__name">домашній хот-дог</h5>
+                            </div>
+                            
+                            <p class="card__waight">250г</p>
+                        </div>
+                        
+                        <div class="card__btn-wrap">
+                            <button class="card__btn">Додати</button>
+                        </div>
+                    </div>
+                </li>
+            
+                <li class="card">
+                    <div class="card__content">
+                        <div class="card__content-wrap">
+                            <img src="./img/hot-dogs/burning.png" alt="пекучий хот-дог" class="card__img">
+                            
+                            <div class="card__title-wrap">
+                                <div class="card__price">
+                                    <p class="price-number">119</p>
+                                    <p>грн</p>
+                                </div>
+                                <h5 class="card__name">пекучий хот-дог</h5>
+                            </div>
+                            
+                            <p class="card__waight">250г</p>
+                        </div>
+                        
+                        <div class="card__btn-wrap">
+                            <button class="card__btn">Додати</button>
+                        </div>
+                    </div>
+                </li>
+            
+                <li class="card">
+                    <div class="card__content">
+                        <div class="card__content-wrap">
+                            <img src="./img/hot-dogs/classic.png" alt="Класичний хот-дог" class="card__img">
+                            
+                            <div class="card__title-wrap">
+                                <div class="card__price">
+                                    <p class="price-number">119</p>
+                                    <p>грн</p>
+                                </div>
+                                <h5 class="card__name">Класичний хот-дог</h5>
+                            </div>
+                            
+                            <p class="card__waight">250г</p>
+                        </div>
+                        
+                        <div class="card__btn-wrap">
+                            <button class="card__btn">Додати</button>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+
+        </div>
+    </main>
+    
+    <main class="menu-kebabs">
+        
+        <div class="container">
+            <a name="kebabs"><h2 class="h2-food">Кебаби</h2></a>
+
+            <ul class="cards">
+                <li class="card">
+                    <div class="card__content">
+                        <div class="card__content-wrap">
+                            <img src="./img/kebab/chicken.jpg" alt="Курячий кебаб" class="card__img">
+                            
+                            <div class="card__title-wrap">
+                                <div class="card__price">
+                                    <p class="price-number">149</p>
+                                    <p>грн</p>
+                                </div>
+                                <h5 class="card__name">Курячий кебаб</h5>
+                            </div>
+                            
+                            <p class="card__waight">390г</p>
+                        </div>
+                        
+                        <div class="card__btn-wrap">
+                            <button class="card__btn">Додати</button>
+                        </div>
+                    </div>
+                </li>
+            
+                <li class="card">
+                    <div class="card__content">
+                        <div class="card__content-wrap">
+                            <img src="./img/kebab/beef.jpg" alt="Яловичий кебаб" class="card__img">
+                            
+                            <div class="card__title-wrap">
+                                <div class="card__price">
+                                    <p class="price-number">189</p>
+                                    <p>грн</p>
+                                </div>
+                                <h5 class="card__name">Яловичий кебаб</h5>
+                            </div>
+                            
+                            <p class="card__waight">390г</p>
+                        </div>
+                        
+                        <div class="card__btn-wrap">
+                            <button class="card__btn">Додати</button>
+                        </div>
+                    </div>
+                </li>
+            
+                <li class="card">
+                    <div class="card__content">
+                        <div class="card__content-wrap">
+                            <img src="./img/kebab/vegetarian.jpg" alt="вегетаріанський кебаб" class="card__img">
+                            
+                            <div class="card__title-wrap">
+                                <div class="card__price">
+                                    <p class="price-number">125</p>
+                                    <p>грн</p>
+                                </div>
+                                <h5 class="card__name">вегетаріанський кебаб</h5>
+                            </div>
+                            
+                            <p class="card__waight">400г</p>
+                        </div>
+                        
+                        <div class="card__btn-wrap">
+                            <button class="card__btn">Додати</button>
+                        </div>
+                    </div>
+                </li>
+
+                <li class="card">
+                    <div class="card__content">
+                        <div class="card__content-wrap">
+                            <img src="./img/kebab/set.jpg" alt="сет з кебабів" class="card__img">
+                            
+                            <div class="card__title-wrap">
+                                <div class="card__price">
+                                    <p class="price-number">655</p>
+                                    <p>грн</p>
+                                </div>
+                                <h5 class="card__name">сет з кебабів</h5>
+                            </div>
+                            
+                            <p class="card__waight">1500г</p>
+                        </div>
+                        
+                        <div class="card__btn-wrap">
+                            <button class="card__btn">Додати</button>
+                        </div>
+                    </div>
+                </li>
+
+            </ul>
+
+        </div>
+    </main>
+
+    <main class="menu-wok">
+        <div class="container">
+            <a name="wok"><h2 class="h2-food">Wok</h2></a>
+
+            <ul class="cards">
+                <li class="card">
+                    <div class="card__content">
+                        <div class="card__content-wrap">
+                            <img src="./img/wok/chiken.jpg" alt="Wok з куркою" class="card__img">
+                            
+                            <div class="card__title-wrap">
+                                <div class="card__price">
+                                    <p class="price-number">165</p>
+                                    <p>грн</p>
+                                </div>
+                                <h5 class="card__name">Wok з куркою</h5>
+                            </div>
+                            
+                            <p class="card__waight">400г</p>
+                        </div>
+                        
+                        <div class="card__btn-wrap">
+                            <button class="card__btn">Додати</button>
+                        </div>
+                    </div>
+                </li>
+            
+                <li class="card">
+                    <div class="card__content">
+                        <div class="card__content-wrap">
+                            <img src="./img/wok/porcine.jpg" alt="Wok з свининою" class="card__img">
+                            
+                            <div class="card__title-wrap">
+                                <div class="card__price">
+                                    <p class="price-number">220</p>
+                                    <p>грн</p>
+                                </div>
+                                <h5 class="card__name">Wok з cвининою</h5>
+                            </div>
+                            
+                            <p class="card__waight">400г</p>
+                        </div>
+                        
+                        <div class="card__btn-wrap">
+                            <button class="card__btn">Додати</button>
+                        </div>
+                    </div>
+                </li>
+            
+                <li class="card">
+                    <div class="card__content">
+                        <div class="card__content-wrap">
+                            <img src="./img/wok/beef.jpg" alt="Wok з телятиною" class="card__img">
+                            
+                            <div class="card__title-wrap">
+                                <div class="card__price">
+                                    <p class="price-number">220</p>
+                                    <p>грн</p>
+                                </div>
+                                <h5 class="card__name">Wok з телятиною</h5>
+                            </div>
+                            
+                            <p class="card__waight">400г</p>
+                        </div>
+                        
+                        <div class="card__btn-wrap">
+                            <button class="card__btn">Додати</button>
+                        </div>
+                    </div>
+                </li>
+
+                
+                    <li class="card">
+                        <div class="card__content">
+                            <div class="card__content-wrap">
+                                <img src="./img/wok/vegetable.jpg" alt="Wok з овочами" class="card__img">
+                                
+                                <div class="card__title-wrap">
+                                    <div class="card__price">
+                                        <p class="price-number">150</p>
+                                        <p>грн</p>
+                                    </div>
+                                    <h5 class="card__name">Wok з овочами</h5>
+                                </div>
+                                
+                                <p class="card__waight">400г</p>
+                            </div>
+                            
+                            <div class="card__btn-wrap">
+                                <button class="card__btn">Додати</button>
+                            </div>
+                        </div>
+                    </li>
+            </ul>
+
+        </div>
+    </main>
+
+    <main class="menu-desserts">
+        <div class="container">
+            <a name="desserts"><h2 class="h2-food">Десерти</h2></a>
+
+            <ul class="cards">
+                <li class="card">
+                    <div class="card__content">
+                        <div class="card__content-wrap">
+                            <img src="./img/desserts/cinnabon-coconut.webp" alt="Сіннабон кокосовий" class="card__img">
+                            
+                            <div class="card__title-wrap">
+                                <div class="card__price">
+                                    <p class="price-number">130</p>
+                                    <p>грн</p>
+                                </div>
+                                <h5 class="card__name">Сіннабон кокосовий</h5>
+                            </div>
+                            
+                            <p class="card__waight">125г</p>
+                        </div>
+                        
+                        <div class="card__btn-wrap">
+                            <button class="card__btn">Додати</button>
+                        </div>
+                    </div>
+                </li>
+            
+                <li class="card">
+                    <div class="card__content">
+                        <div class="card__content-wrap">
+                            <img src="./img/desserts/sinn-choc.webp" alt="Сіннабон шоколадний" class="card__img">
+                            
+                            <div class="card__title-wrap">
+                                <div class="card__price">
+                                    <p class="price-number">130</p>
+                                    <p>грн</p>
+                                </div>
+                                <h5 class="card__name">Сіннабон шоколадний</h5>
+                            </div>
+                            
+                            <p class="card__waight">125г</p>
+                        </div>
+                        
+                        <div class="card__btn-wrap">
+                            <button class="card__btn">Додати</button>
+                        </div>
+                    </div>
+                </li>
+            
+                <li class="card">
+                    <div class="card__content">
+                        <div class="card__content-wrap">
+                            <img src="./img/desserts/sinn-cher.webp" alt="Сіннабон з вишнею" class="card__img">
+                            
+                            <div class="card__title-wrap">
+                                <div class="card__price">
+                                    <p class="price-number">130</p>
+                                    <p>грн</p>
+                                </div>
+                                <h5 class="card__name">Сіннабон з вишнею</h5>
+                            </div>
+                            
+                            <p class="card__waight">125г</p>
+                        </div>
+                        
+                        <div class="card__btn-wrap">
+                            <button class="card__btn">Додати</button>
+                        </div>
+                    </div>
+                </li>
+
+                <li class="card">
+                    <div class="card__content">
+                        <div class="card__content-wrap">
+                            <img src="./img/desserts/sinn-caram.webp" alt="Сіннабон з карамеллю" class="card__img">
+                                
+                            <div class="card__title-wrap">
+                                <div class="card__price">
+                                    <p class="price-number">130</p>
+                                    <p>грн</p>
+                                </div>
+                                <h5 class="card__name">Сіннабон з карамеллю</h5>
+                            </div>
+                                
+                            <p class="card__waight">125г</p>
+                        </div>
+                            
+                        <div class="card__btn-wrap">
+                            <button class="card__btn">Додати</button>
+                        </div>
+                    </div>
+                </li>
+
+            </ul>
+
+        </div>
+    </main>
+
+    <main class="menu-sauces">
+        <div class="container">
+            <a name="sauces"><h2 class="h2-food">Соуси</h2></a>
+
+            <ul class="cards">
+                <li class="card">
+                    <div class="card__content">
+                        <div class="card__content-wrap">
+                            <img src="./img/sauces/ketchup.png" alt="Кетчуп" class="card__img">
+                            
+                            <div class="card__title-wrap">
+                                <div class="card__price">
+                                    <p class="price-number">30</p>
+                                    <p>грн</p>
+                                </div>
+                                <h5 class="card__name">Кетчуп</h5>
+                            </div>
+                            
+                            <p class="card__waight">45г</p>
+                        </div>
+                        
+                        <div class="card__btn-wrap">
+                            <button class="card__btn">Додати</button>
+                        </div>
+                    </div>
+                </li>
+            
+                <li class="card">
+                    <div class="card__content">
+                        <div class="card__content-wrap">
+                            <img src="./img/sauces/ketchup-bbq.png" alt="Кетчуп BBQ" class="card__img">
+                            
+                            <div class="card__title-wrap">
+                                <div class="card__price">
+                                    <p class="price-number">30</p>
+                                    <p>грн</p>
+                                </div>
+                                <h5 class="card__name">Кетчуп BBQ</h5>
+                            </div>
+                            
+                            <p class="card__waight">45г</p>
+                        </div>
+                        
+                        <div class="card__btn-wrap">
+                            <button class="card__btn">Додати</button>
+                        </div>
+                    </div>
+                </li>
+            
+                <li class="card">
+                    <div class="card__content">
+                        <div class="card__content-wrap">
+                            <img src="./img/sauces/garlicky.png" alt="Часниковий соус" class="card__img">
+                            
+                            <div class="card__title-wrap">
+                                <div class="card__price">
+                                    <p class="price-number">30</p>
+                                    <p>грн</p>
+                                </div>
+                                <h5 class="card__name">Часниковий соус</h5>
+                            </div>
+                            
+                            <p class="card__waight">45г</p>
+                        </div>
+                        
+                        <div class="card__btn-wrap">
+                            <button class="card__btn">Додати</button>
+                        </div>
+                    </div>
+                </li>
+
+                
+                <li class="card">
+                    <div class="card__content">
+                        <div class="card__content-wrap">
+                            <img src="./img/sauces/cheesy.png" alt="сирний соус" class="card__img">
+                                
+                            <div class="card__title-wrap">
+                                <div class="card__price">
+                                    <p class="price-number">30</p>
+                                    <p>грн</p>
+                                </div>
+                                <h5 class="card__name">Cирний соус</h5>
+                            </div>
+                                
+                            <p class="card__waight">45г</p>
+                        </div>
+                            
+                        <div class="card__btn-wrap">
+                            <button class="card__btn">Додати</button>
+                        </div>
+                    </div>
+                </li>
+
+            </ul>
+
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-wrap">
+                <a href="./index.html" class="img-logo"><img src="./img/page-img/logo-footer.png" alt="YourMeal"></a>
+                
+
+                    <div class="footer-text-block">
+                        <h4 class="footer-title">Номер для замовлення</h4>
+                        <div class="phone-wrap">
+                            <img src="./img/footer-img/phone.png" alt="phone-icon">
+                            <a href="tel:+380685926932" class="phone-number">+(380) 68-592-69-32</a>
+                        </div>
+                        
+                    </div> 
+
+                    <div class="footer-text-block">
+                        <h4 class="footer-title">Ми в соцмережах</h4>
+                        <div class="footer-logo-wrap">
+                            <a href="#!"><img src="./img/footer-img/instagram.png" alt="instagram" class="footer-logo"></a>
+                            <a href="#!"><img src="./img/footer-img/telegram.png" alt="telegram" class="footer-logo"></a>
+                        </div>
+                    </div> 
+                
+            </div>
+        </div>
+    </footer>
+
+    <script src="./js/main.js"></script>
+</body>
+</html>

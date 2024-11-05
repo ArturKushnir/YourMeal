@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./img/page-img/pic.png" type="image/png">
+    <title>Корзина</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <!-- шрифти -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200..1000&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header" id="header">
+        <div class="container">
+             <div class="header__nav-wrap">
+             <a href="./index.html"><img src="./img/page-img/logo-header.svg" alt="YourMeal" class="logo"></a>
+
+                <ul class="nav-btn">
+                    <li class="nav-btn__item"><a href="#!" class="btn-login">Login</a></li>
+                    <li class="nav-btn__item"><a href="#!" class="btn-sign">Sign up</a></li>
+                </ul>
+             </div>
+        </div>
+    </header>
+
+
+    <main class="basket">
+        <div class="container">
+            <h2 class="h2-food">Корзина</h2>
+            <div class="basket-card">
+                <ul class="product-cards" id="product-cards">
+
+                </ul>
+
+                <p class="final-cost__title">Всього: xxxx грн</p>
+
+                <div class="delivery">
+                    <img src="./img/basket-img/delivery.png" alt="delivery" class="delivery__logo">
+                    <p class="delivery__price">Безкоштовна доставка</p>
+                </div>
+
+                <div class="completion">
+                    <button class="completion__btn">Оформити замовлення</button>
+                </div>
+
+            </div>
+        </div>
+    </main>
+
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-wrap">
+                <a href="./index.html" class="img-logo"><img src="./img/page-img/logo-footer.png" alt="YourMeal"></a>
+                
+
+                    <div class="footer-text-block">
+                        <h4 class="footer-title">Номер для замовлення</h4>
+                        <div class="phone-wrap">
+                            <img src="./img/footer-img/phone.png" alt="phone-icon">
+                            <a href="tel:+380685926932" class="phone-number">+(380) 68-592-69-32</a>
+                        </div>
+                        
+                    </div> 
+
+                    <div class="footer-text-block">
+                        <h4 class="footer-title">Ми в соцмережах</h4>
+                        <div class="footer-logo-wrap">
+                            <a href="#!"><img src="./img/footer-img/instagram.png" alt="instagram" class="footer-logo"></a>
+                            <a href="#!"><img src="./img/footer-img/telegram.png" alt="telegram" class="footer-logo"></a>
+                        </div>
+                    </div> 
+                
+            </div>
+        </div>
+    </footer>
+
+    <script>
+
+        let ul = document.getElementById('product-cards');
+
+        document.addEventListener('DOMContentLoaded', function() {
+            let products = JSON.parse(localStorage.getItem('cart')) || [];
+            console.log(products);
+
+            for (const product of products) {
+
+                ul.innerHTML += `
+                <li class="product-card">
+                        <div class="product-card-content">
+                            <div class="product-card-wrap">
+                                <img src="${product.image}" alt="" class="card__img">
+
+                                <div class="product-card-title">
+                                    <p class="product-card-title__name">${product.name}</p>
+                                    <p class="card__waight">${product.waight}</p>
+                                </div>
+
+                                <p class="">${product.price}</p>
+                            </div>
+
+                            <div class="product-card-btn">
+                                <div class="basket-product__counter">
+
+                                    <button class="counter-minus">-</button>
+                                    <p class="counter-num">1</p>
+                                    <button class="couner-plus">+</button>
+
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                `
+            }
+
+        });
+
+
+
+    </script>
+
+</body>
+</html>
