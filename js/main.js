@@ -29,14 +29,13 @@ window.addEventListener('scroll', handleScroll);
 let addBtn = document.getElementsByClassName('card__btn');
 for (let btn of addBtn) {
     btn.addEventListener('click', function() {
-        console.log('click');
 
         let card = btn.closest('.card');
 
         // Отримуємо назву, ціну та шлях до зображення продукту
         let name = card.querySelector('.card__name').innerText;
         let waight = card.querySelector('.card__waight').innerText;
-        let price = card.querySelector('.card__price').innerText;
+        let price = card.querySelector('.price-number').innerText;
         let image = card.querySelector('.card__img').src;
 
         let product = {
@@ -54,7 +53,9 @@ for (let btn of addBtn) {
 
 }
 
-localStorage.clear()
+
+
+
 
 
 

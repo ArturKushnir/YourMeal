@@ -35,17 +35,56 @@
 
                 </ul>
 
-                <p class="final-cost__title">Всього: xxxx грн</p>
+                <p class="final-cost__title" id="final-cost__title"></p>
 
-                <div class="delivery">
-                    <img src="./img/basket-img/delivery.png" alt="delivery" class="delivery__logo">
-                    <p class="delivery__price">Безкоштовна доставка</p>
+                <div class="delivery" id="delivery">
+
                 </div>
 
                 <div class="completion">
-                    <button class="completion__btn">Оформити замовлення</button>
+                    <a class="completion__btn" href="#delivery">Оформити замовлення</a>
                 </div>
 
+            </div>
+        </div>
+    </main>
+
+    <main class="delivery-registration">
+        <div class="container">
+            <div class="sides-wrap">
+                <!-- Лівий блок із зображенням -->
+                <div class="left-side">
+                    <img src="./img/basket-img/donat.png" alt="Зображення пончика">
+                </div>
+
+                <!-- Правий блок із формою -->
+                <div class="right-side">
+                    <a name="#delivery"><h2 class="right-side__title">Доставка</h2></a>
+                    <form class="form" id="form">
+                        <input type="text" placeholder="Ваше ім'я" class="form__input-text" name="name">
+                        <input type="tel" placeholder="Телефон" class="form__input-text" name="tel">
+
+                        <div class="form__label-wrap">
+                            <label class="form__label">
+                                <input class="form__input-radio" id="radio-self-pickup" type="radio" name="delivery" value="pickup" checked> Самовивіз
+                            </label>
+                            <label class="form__label">
+                                <input class="form__input-radio" id="radio-delivery" type="radio" name="delivery" value="delivery"> Доставка
+                            </label>
+                        </div>
+
+                        <div class="form__additional" id="additional">
+
+                        </div>
+
+                        <div class="submit-btn-wrap">
+                            <button type="submit" class="form__btn" id="form-btn">Оформити</button>
+                        </div>
+
+                        <p class="success display">Замовлення оформлено!</p>
+
+                    </form>
+                </div>
             </div>
         </div>
     </main>
@@ -78,49 +117,11 @@
         </div>
     </footer>
 
-    <script>
 
-        let ul = document.getElementById('product-cards');
+    <script src="js/basket.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="js/order.js"></script>
 
-        document.addEventListener('DOMContentLoaded', function() {
-            let products = JSON.parse(localStorage.getItem('cart')) || [];
-            console.log(products);
-
-            for (const product of products) {
-
-                ul.innerHTML += `
-                <li class="product-card">
-                        <div class="product-card-content">
-                            <div class="product-card-wrap">
-                                <img src="${product.image}" alt="" class="card__img">
-
-                                <div class="product-card-title">
-                                    <p class="product-card-title__name">${product.name}</p>
-                                    <p class="card__waight">${product.waight}</p>
-                                </div>
-
-                                <p class="">${product.price}</p>
-                            </div>
-
-                            <div class="product-card-btn">
-                                <div class="basket-product__counter">
-
-                                    <button class="counter-minus">-</button>
-                                    <p class="counter-num">1</p>
-                                    <button class="couner-plus">+</button>
-
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-                `
-            }
-
-        });
-
-
-
-    </script>
 
 </body>
 </html>

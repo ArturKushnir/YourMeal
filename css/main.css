@@ -17,10 +17,8 @@
     --btn-hover: var(--accent);
     --text-hover: var(--white);
 
-
     /* Test color */
     /*#024234*/
-
     
     --box-shadow: 0px 3px 15px 0px rgba(0, 0, 0, 0.15);
    /* box-shadow: 0px 5px 35px 0px rgba(0, 0, 0, 0.25);*/
@@ -47,18 +45,16 @@ body {
 
 .header {
     padding-top: 24px;
-    padding-bottom: 24px; /*у макеті немає*/
-
+    padding-bottom: 24px; 
     background-color: var(--header-bg);
 }
 
-.header__nav-wrap {
+.header__logo-wrapper {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    column-gap: 30px;
-    row-gap: 20px;
-    flex-wrap: wrap;
+    justify-content: center; /* Центрування логотипу */
+    width: 100%;
+
+    padding-bottom: 30px;
 }
 
 .nav-btn {
@@ -101,18 +97,18 @@ body {
     padding-bottom: 16px;
 }
 
-.header-title {
+.header__title {
     font-size: 50px;
     font-weight: 800;
     color: var(--white);
     width: 437px;
 }
 
-.accent {
+.header__title-accent {
     color: var(--btn-hover);
 }
 
-.header-p {
+.header__description {
     color: var(--white);
 }
 
@@ -336,7 +332,7 @@ body {
 
 .basket {
     padding-top: 50px;
-    padding-bottom: 70px;
+    padding-bottom: 100px;
 }
 
 .basket-card {
@@ -413,7 +409,7 @@ body {
 
 .completion {
     text-align: center;
-    padding-bottom: 12px;
+    padding-bottom: 34px;
 }
 
 .completion__btn {
@@ -433,8 +429,123 @@ body {
     color: var(--text-hover);
 }
 
+/*форма замовлення*/
 
-/*.card__btn-wrap {
+.delivery-registration {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 100px;
+}
+
+
+.sides-wrap {
+    display: flex;
+    justify-content: center;
+
+    width: 684px; /* 342px + 342px */
+    border-radius: 24px;
+    overflow: hidden;
+    box-shadow: var(--box-shadow);
+}
+
+.left-side {
+    background-color: var(--header-bg);
+    width: 342px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.right-side { /*pb 24  pt 44*/
+    width: 342px;
+    padding-top: 44px;
+    padding-bottom: 24px;
+    padding-left: 24px;
+    padding-right: 24px;
+}
+
+.right-side__title {
+    font-weight: 600;
+    font-size: 24px;
+}
+
+.registration-form {
+    padding-top: 20px;
+}
+
+.form__input-text {
+    padding: 12px;
+    margin-bottom: 8px; /*8*/
+    border: 1px solid var(--grey);
+    width: 294px;
+    border-radius: 12px;
+
+}
+
+.form__label-wrap {
+    padding-top: 8px;
+    padding-bottom: 16px;
+    display: flex;
+    flex-direction: column;
+}
+
+.form__input-radio {
+    appearance: none;
+    -webkit-appearance: none;
+    background-color: #fff;
+    border: 1px solid black;
+    border-radius: 50%;
+    width: 12px;
+    height: 12px;
+    cursor: pointer;
+    position: relative;
+}
+
+
+.form__input-radio:checked {
+    background-color: var(--btn-hover);
+}
+
+.submit-btn-wrap {
     text-align: center;
-    padding-bottom: 12px;
-}*/
+    padding-top: 32px;
+}
+
+.form__btn {
+    border-radius: 12px;
+    background-color: var(--color-btn);
+    color: var(--text-color);
+    padding-top: 11px;
+    padding-bottom: 11px;
+    padding-left: 92px;
+    padding-right: 92px;
+
+    transition: background-color 0.3s ease, color 0.3s ease; /* Плавність зміни кольорів */
+}
+
+.form__btn:hover {
+    background-color: var(--btn-hover);
+    color: var(--text-hover);
+}
+
+.delivery-input {
+    padding: 12px;
+    margin-bottom: 8px; /*8*/
+    border: 1px solid var(--grey);
+    width: 143px;
+    border-radius: 12px;
+}
+
+.success {
+    padding-top: 10px;
+    font-size: 12px;
+    text-align: center;
+}
+
+.display {
+    display: none;
+}
+
+
